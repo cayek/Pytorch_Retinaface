@@ -3,11 +3,12 @@ from torch import nn
 import torchvision
 import os
 import struct
+torch.cuda.set_device(2)
 #from torchsummary import summary
 
 def main():
     print('cuda device count: ', torch.cuda.device_count())
-    device = 'cuda:1'
+    device = 'cuda:2'
     net = torch.load('retinaface.pth')
     net = net.to(device)
     net.eval()

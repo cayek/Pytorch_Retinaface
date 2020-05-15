@@ -1,0 +1,7 @@
+md5: 8cce07adbb44fe7e9cd3b67f6971aa45
+outs:
+- md5: 2402352c129917fa6c6a9e0ea16351a5.dir
+  path: weights
+  cache: true
+  metric: false
+  persist: false

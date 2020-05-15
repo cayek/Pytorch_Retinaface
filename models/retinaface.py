@@ -60,6 +60,7 @@ class RetinaFace(nn.Module):
                 checkpoint = torch.load("./weights/mobilenetV1X0.25_pretrain.tar", map_location=torch.device('cpu'))
                 from collections import OrderedDict
                 new_state_dict = OrderedDict()
+                import ipdb; ipdb.set_trace()
                 for k, v in checkpoint['state_dict'].items():
                     name = k[7:]  # remove module.
                     new_state_dict[name] = v
